@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214 17% 45%);
+  --grayish-blue: hsl(213, 29%, 52%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --shadow: hsl(214 21% 84%);
+}
+
+body {
+  background-color: var(--light-grayish-blue);
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  height: 100%;
+}
+
+.card-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 327px;
+  height: 512px;
+  background-color: white;
+  background-image: url("./images/drawers-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 15px 5px var(--shadow);
+  box-shadow: 5px 5px 15px 5px var(--shadow);
+}
+
+.card-middle {
+  margin-top: 200px;
+  padding: 32px 37px 37px 32px;
+}
+
+.card-middle-title {
+  color: var(--very-dark-grayish-blue);
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.card-middle-paragraph {
+  color: var(--desaturated-dark-blue);
+  font-weight: 500;
+}
+
+.card-footer {
+  display: flex;
+  padding: 10px 37px 10px 32px;
+  line-height: 1.6;
+  align-items: flex-end;
+}
+
+.img-michelle {
+  width: 15%;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.name-michelle {
+  color: var(--very-dark-grayish-blue);
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.date-michelle {
+  color: var(--desaturated-dark-blue);
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.arrow-container {
+  width: 30px;
+  height: 30px;
+  background-color: var(--light-grayish-blue);
+  margin-left: 65px;
+  border: none;
+  border-radius: 50px;
+  z-index: 2;
+}
+
+.arrow {
+  color: var(--desaturated-dark-blue);
+}
+
+.share-box {
+  width: 327px;
+  height: 73px;
+  background-color: var(--very-dark-grayish-blue);
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -webkit-box-shadow: 5px 5px 15px 5px var(--shadow);
+  box-shadow: 5px 5px 15px 5px var(--shadow);
+}
+
+.social-media {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.social-media-wrapper {
+  width: 257px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.share-text {
+  color: var(--light-grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 3px;
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    width: 730px;
+    height: 280px;
+    background-image: url("./images/drawers-deskop.jpg");
+    background-size: 40%;
+    overflow: visible;
+  }
+
+  .card-middle {
+    margin: 0 0 0 293px;
+    padding: 32px 37px 15px 32px;
+  }
+
+  .card-middle-title {
+    font-size: 1.6em;
+  }
+
+  .card-middle-paragraph {
+    line-height: 1.5;
+  }
+
+  .card-footer {
+    margin-left: 293px;
+    align-items: center;
+  }
+
+  .img-michelle {
+    width: 11%;
+  }
+
+  .arrow-container {
+    margin-left: 179px;
+  }
+
+  .share-box {
+    width: 248px;
+    height: 55px;
+    position: absolute;
+    left: 553px;
+    top: 137px;
+    border-radius: 10px;
+  }
+
+  .social-media-wrapper {
+    width: 248px;
+    height: 60px;
+  }
+
+  .share-box:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: var(--very-dark-grayish-blue) transparent;
+    border-width: 20px 20px 0;
+    bottom: -11px;
+    left: 50%;
+    margin-left: -20px;
+  }
+}

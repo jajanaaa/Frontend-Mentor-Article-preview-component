@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Article preview component</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/aa947fbc3d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="card-wrapper">
+      <main class="card">
+        <div class="card-middle">
+          <h1 class="card-middle-title">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="card-middle-paragraph">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </div>
+        <div class="share-box">
+          <div class="social-media-wrapper">
+            <div class="social-media">
+              <p class="share-text">Share</p>
+              <div>
+                <img src="images/icon-facebook.svg" alt="Facebook icon" />
+              </div>
+              <div>
+                <img src="images/icon-twitter.svg" alt="Twitter icon" />
+              </div>
+              <div>
+                <img src="images/icon-pinterest.svg" alt="Pinterest icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <img
+            class="img-michelle"
+            src="images/avatar-michelle.jpg"
+            alt="Avatar of Michelle"
+          />
+          <ul>
+            <li class="name-michelle">Michelle Appleton</li>
+            <li class="date-michelle">28 Jun 2020</li>
+          </ul>
+          <button class="arrow-container" onclick="showShare()">
+            <i class="arrow fas fa-share" title="Click to share"></i>
+          </button>
+        </div>
+      </main>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
